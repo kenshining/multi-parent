@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="lxyw-authority" />
+        <module name="lxyw-logger" />
+        <module name="lxyw-msg-center" />
+        <module name="lxyw-website-restful" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="lxyw-authority" target="1.8" />
+      <module name="lxyw-logger" target="1.8" />
+      <module name="lxyw-msg-center" target="1.8" />
+      <module name="lxyw-website-restful" target="1.8" />
+      <module name="multi-parent" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

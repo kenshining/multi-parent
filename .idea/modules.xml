@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/lxyw-authority/lxyw-authority.iml" filepath="$PROJECT_DIR$/lxyw-authority/lxyw-authority.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lxyw-logger/lxyw-logger.iml" filepath="$PROJECT_DIR$/lxyw-logger/lxyw-logger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lxyw-msg-center/lxyw-msg-center.iml" filepath="$PROJECT_DIR$/lxyw-msg-center/lxyw-msg-center.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lxyw-website-restful/lxyw-website-restful.iml" filepath="$PROJECT_DIR$/lxyw-website-restful/lxyw-website-restful.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multi-parent.iml" filepath="$PROJECT_DIR$/multi-parent.iml" />
+    </modules>
+  </component>
+</project>
