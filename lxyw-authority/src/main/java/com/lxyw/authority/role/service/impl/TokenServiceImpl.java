@@ -25,7 +25,7 @@ public class TokenServiceImpl implements TokenService {
             //使用UUID生成令牌，附带userID组成令牌
             String token = UUID.randomUUID().toString().replace("-", "").concat("-").concat(userId);
             //TODO 将令牌以键值对的形式存储到Redis中，设置有效期。
-            return token;
+            return token.toUpperCase();
         }
 
         return null;
