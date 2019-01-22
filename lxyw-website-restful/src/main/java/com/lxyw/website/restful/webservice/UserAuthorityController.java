@@ -1,6 +1,7 @@
 package com.lxyw.website.restful.webservice;
 
 import com.lxyw.authority.role.service.TokenService;
+import com.lxyw.msgcenter.mail.MailService;
 import com.lxyw.website.restful.entity.UserEntity;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,6 +19,8 @@ public class UserAuthorityController {
 
     @Autowired
     TokenService tokenService;
+    @Autowired
+    MailService mailService;
 
     @RequestMapping(value="/login", method=RequestMethod.GET)
     @ResponseBody

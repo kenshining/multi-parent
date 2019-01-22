@@ -15,6 +15,6 @@
     <!-- 当ProtocolConfig和ServiceConfig某属性没有配置时,采用此缺省值 -->
     <dubbo:provider timeout="30000" threadpool="fixed" threads="500" accepts="1000" />
     <!-- 资源服务 -->
-    <dubbo:service retries="0" interface="com.lxyw.msgcenter.mail.MailService" ref="mailService"/>
-    <dubbo:service retries="0" interface="com.lxyw.msgcenter.sms.SMSService" ref="smsService"/>
+    <dubbo:service retries="0" interface="com.lxyw.msgcenter.mail.MailService" ref="mailService" version="0.0.1"/>
+    <dubbo:service retries="0" interface="com.lxyw.msgcenter.sms.SMSService" ref="smsService" version="0.0.1"/>
 </beans>

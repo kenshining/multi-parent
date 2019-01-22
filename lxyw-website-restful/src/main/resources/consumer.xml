@@ -9,6 +9,8 @@
     <dubbo:application name="lxyw-consumer-restful" />
     <dubbo:registry protocol="zookeeper" address="zookeeper://127.0.0.1:2181" group="lxyw"/>
 
-    <dubbo:reference id="tokenService" interface="com.lxyw.authority.role.service.TokenService"/>
-    <!--url="dubbo://127.0.0.1:20900"-->
+    <dubbo:reference id="tokenService" interface="com.lxyw.authority.role.service.TokenService" version="0.0.1"/>
+
+    <dubbo:reference id="mailService"  interface="com.lxyw.msgcenter.mail.MailService" version="0.0.1"/>
+    <dubbo:reference id="smsService"  interface="com.lxyw.msgcenter.sms.SMSService" version="0.0.1"/>
 </beans>

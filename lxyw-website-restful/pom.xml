@@ -58,6 +58,14 @@
             <groupId>com.lxyw</groupId>
             <artifactId>lxyw-authority</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.lxyw</groupId>
+            <artifactId>lxyw-logger</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.lxyw</groupId>
+            <artifactId>lxyw-msg-center</artifactId>
+        </dependency>
 
     </dependencies>
 
