@@ -27,7 +27,6 @@ public class TokenServiceImpl implements TokenService {
             //TODO 将令牌以键值对的形式存储到Redis中，设置有效期。
             return token.toUpperCase();
         }
-
         return null;
     }
 
@@ -46,7 +45,7 @@ public class TokenServiceImpl implements TokenService {
      * @param token 用户请求Token
      * @return 0 无效，1有效
      */
-    public int validateAccessToken(String token){
+    public int validateAccessToken(String userId,String token){
         return 0;
     }
 

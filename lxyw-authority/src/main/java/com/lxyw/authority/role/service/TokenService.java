@@ -25,7 +25,7 @@ public interface TokenService {
      * @param token 用户请求Token
      * @return 0 无效，1有效
      */
-    public int validateAccessToken(String token);
+    public int validateAccessToken(String userId,String token);
 
     /**
      * 使用户失效，传入用户ID和Token

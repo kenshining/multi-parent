@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lxyw.authority.entity.UserInfo">
+    <!-- 返回结果map与object的关系 -->
+    <resultMap id="UserInfo" type="com.lxyw.authority.entity.UserInfo" >
+        <result column="id" jdbcType="VARCHAR" property="id" />
+        <result column="createDate" jdbcType="TIMESTAMP" property="createDate" />
+        <result column="createBy" jdbcType="VARCHAR" property="createBy" />
+        <result column="updateDate" jdbcType="TIMESTAMP" property="updateDate" />
+        <result column="updateBy" jdbcType="VARCHAR" property="updateBy" />
+        <result column="version" jdbcType="INTEGER" property="version" />
+
+        <result column="username" jdbcType="VARCHAR" property="username" />
+        <result column="password" jdbcType="VARCHAR" property="password" />
+        <result column="mobile" jdbcType="VARCHAR" property="mobile" />
+        <result column="email" jdbcType="VARCHAR" property="email" />
+        <result column="stuffNo" jdbcType="VARCHAR" property="stuffNo" />
+        <result column="status" jdbcType="INTEGER" property="status" />
+    </resultMap>
+
+    <select id="select" parameterType="java.util.Map" resultMap="UserInfo">
+        SELECT * FROM USER_INFO
+        <where>
+            <if test="id != null and id != ''">
+              and id = #{id}
+            </if>
+            <if test="createDate != null">
+                and createDate = #{createDate}
+            </if>
+            <if test="createBy != null and createBy != ''">
+                and createBy = #{createBy}
+            </if>
+            <if test="updateDate != null">
+                and updateDate #{updateDate
+            </if>
+            <if test="updateBy != null and updateBy != ''">
+                and updateBy = #{updateBy}
+            </if>
+            <if test="username != null and username != ''">
+                and username = #{username}
+            </if>
+            <if test="mobile != null and mobile != ''">
+                and mobile = #{mobile}
+            </if>
+            <if test="email != null and email != ''">
+                and email = #{email}
+            </if>
+            <if test="stuffNo != null and stuffNo != ''">
+                and stuffNo = #{stuffNo}
+            </if>
+            <if test="status != null">
+                and status = #{status}
+            </if>
+        </where>
+    </select>
+
+</mapper>
