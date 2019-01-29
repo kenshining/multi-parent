@@ -10,6 +10,7 @@ public abstract class BaseEntity implements Serializable {
     protected static final long serialVersionUID = 1L;
 
     @Id
+    @Column(name = "id")
     protected String id;
 
     @Column(name = "createDate")

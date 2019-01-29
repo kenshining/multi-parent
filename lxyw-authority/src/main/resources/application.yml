@@ -8,8 +8,18 @@ spring:
         username: root
         password: root6299383
         driverClassName: com.mysql.cj.jdbc.Driver
-
-mapper:
-  mappers:  com.lxyw.authority.mapper.CommonMapper
+#mybatis
+mybatis:
+  type-aliases-package: com.lxyw.authority.entity
+  #mapper-locations: "classpath:*Mapper.xml"
+  #mappers 多个接口时逗号隔开
+  mappers: tk.mybatis.mapper.common.Mapper,tk.mybatis.mapper.common.MySqlMapper
   not-empty:  false
   identity: MYSQL
+
+#pagehelper
+pagehelper:
+  helperDialect:  mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql

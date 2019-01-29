@@ -9,7 +9,6 @@
         <result column="updateDate" jdbcType="TIMESTAMP" property="updateDate" />
         <result column="updateBy" jdbcType="VARCHAR" property="updateBy" />
         <result column="version" jdbcType="INTEGER" property="version" />
-
         <result column="username" jdbcType="VARCHAR" property="username" />
         <result column="password" jdbcType="VARCHAR" property="password" />
         <result column="mobile" jdbcType="VARCHAR" property="mobile" />
@@ -18,7 +17,7 @@
         <result column="status" jdbcType="INTEGER" property="status" />
     </resultMap>
 
-    <select id="select" parameterType="java.util.Map" resultMap="UserInfo">
+    <select id="selectByMapParams" parameterType="java.util.Map" resultMap="UserInfo">
         SELECT * FROM USER_INFO
         <where>
             <if test="id != null and id != ''">

@@ -13,7 +13,7 @@ public class SqlTests extends LxywAuthorityApplicationTests {
 
     @Test
     public void selectTest(){
-        UserInfo user = userInfoMapper.selectByPrimaryKey("uiouiiosufiodsuifouiofusofdsa");
+        UserInfo user = userInfoMapper.selectByPrimaryKey("uiouiiosufiodsuifoui");
         logger.info(user.toString());
     }
 }
