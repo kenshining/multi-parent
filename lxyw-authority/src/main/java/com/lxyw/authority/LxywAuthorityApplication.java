@@ -1,6 +1,6 @@
 package com.lxyw.authority;
 
-import org.mybatis.spring.annotation.MapperScan;
+import tk.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @SpringBootApplication
 @EnableTransactionManagement
-@MapperScan(basePackages={"com.lxyw.authority.mapper.*"})
+@MapperScan(basePackages={"com.lxyw.*.mapper.*"})
 @ComponentScan("com.lxyw.authority.*")
 @ImportResource("classpath:provider.xml")
 public class LxywAuthorityApplication {
