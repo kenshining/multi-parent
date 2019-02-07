@@ -2,6 +2,8 @@ package com.lxyw.authority.entity;
 
 import com.lxyw.authority.AbstractSurpport.BaseEntity;
 
+import javax.persistence.Column;
+import javax.persistence.Table;
 import java.util.Date;
 
 /**
@@ -12,44 +14,49 @@ import java.util.Date;
  * @author Mht
  * @since 2019-01-23
  */
+@Table(name = "group_privilege_role")
 public class GroupPrivilegeRole extends BaseEntity{
 
     private static final long serialVersionUID = 1L;
 
-    private String privilege_role_name;
+    @Column(name = "privilege_role_name")
+    private String privilegeRoleName;
 
-    private String privilege_id;
+    @Column(name = "privilege_id")
+    private String privilegeId;
 
-    private String role_id;
+    @Column(name = "role_id")
+    private String roleId;
 
+    @Column(name = "remark")
     private String remark;
 
     public static long getSerialVersionUID() {
         return serialVersionUID;
     }
 
-    public String getPrivilege_role_name() {
-        return privilege_role_name;
+    public String getPrivilegeRoleName() {
+        return privilegeRoleName;
     }
 
-    public void setPrivilege_role_name(String privilege_role_name) {
-        this.privilege_role_name = privilege_role_name;
+    public void setPrivilegeRoleName(String privilegeRoleName) {
+        this.privilegeRoleName = privilegeRoleName;
     }
 
-    public String getPrivilege_id() {
-        return privilege_id;
+    public String getPrivilegeId() {
+        return privilegeId;
     }
 
-    public void setPrivilege_id(String privilege_id) {
-        this.privilege_id = privilege_id;
+    public void setPrivilegeId(String privilegeId) {
+        this.privilegeId = privilegeId;
     }
 
-    public String getRole_id() {
-        return role_id;
+    public String getRoleId() {
+        return roleId;
     }
 
-    public void setRole_id(String role_id) {
-        this.role_id = role_id;
+    public void setRoleId(String roleId) {
+        this.roleId = roleId;
     }
 
     public String getRemark() {

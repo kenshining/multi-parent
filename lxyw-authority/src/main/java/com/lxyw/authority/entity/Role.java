@@ -2,6 +2,8 @@ package com.lxyw.authority.entity;
 
 import com.lxyw.authority.AbstractSurpport.BaseEntity;
 
+import javax.persistence.Column;
+import javax.persistence.Table;
 import java.util.Date;
 
 /**
@@ -12,16 +14,18 @@ import java.util.Date;
  * @author Mht
  * @since 2019-01-23
  */
+@Table(name = "role")
 public class Role extends BaseEntity{
 
     private static final long serialVersionUID = 1L;
 
+    @Column(name = "role_name")
     private String roleName;
-
+    @Column(name = "role_code")
     private String roleCode;
-
+    @Column(name = "remarks")
     private String remarks;
-
+    @Column(name = "status")
     private Integer status;
 
     public static long getSerialVersionUID() {

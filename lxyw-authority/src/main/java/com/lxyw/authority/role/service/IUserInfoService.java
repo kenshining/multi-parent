@@ -1,5 +1,6 @@
 package com.lxyw.authority.role.service;
 
+import com.lxyw.authority.AbstractSurpport.BaseMsgEntity;
 import com.lxyw.authority.AbstractSurpport.IBaseService;
 import com.lxyw.authority.entity.UserInfo;
 /**
@@ -32,5 +33,5 @@ public interface IUserInfoService extends IBaseService<UserInfo> {
      * @param password
      * @return
      */
-    public UserInfo login(String userName,String password);
+    public BaseMsgEntity<UserInfo> login(String userName, String password);
 }

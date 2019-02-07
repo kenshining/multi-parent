@@ -26,7 +26,7 @@ public abstract class BaseEntity implements Serializable {
     protected String updateBy;
 
     @Column(name = "version")
-    protected long version;
+    protected Long version;
 
     public String getId() {
         return id;
@@ -68,11 +68,11 @@ public abstract class BaseEntity implements Serializable {
         this.updateBy = updateBy;
     }
 
-    public long getVersion() {
+    public Long getVersion() {
         return version;
     }
 
-    public void setVersion(long version) {
+    public void setVersion(Long version) {
         this.version = version;
     }
 }

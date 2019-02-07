@@ -16,5 +16,6 @@
     <dubbo:provider timeout="30000" threadpool="fixed" threads="500" accepts="1000" />
     <!-- 资源服务 -->
     <dubbo:service retries="0" interface="com.lxyw.authority.role.service.TokenService" ref="tokenService" version="0.0.1"/>
+    <dubbo:service retries="0" interface="com.lxyw.authority.role.service.IUserInfoService" ref="userInfoService" version="0.0.1"/>
 
 </beans>

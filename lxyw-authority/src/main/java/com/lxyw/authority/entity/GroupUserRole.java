@@ -2,6 +2,8 @@ package com.lxyw.authority.entity;
 
 import com.lxyw.authority.AbstractSurpport.BaseEntity;
 
+import javax.persistence.Column;
+import javax.persistence.Table;
 import java.util.Date;
 
 /**
@@ -12,34 +14,38 @@ import java.util.Date;
  * @author Mht
  * @since 2019-01-23
  */
+@Table(name = "group_user_role")
 public class GroupUserRole extends BaseEntity{
 
     private static final long serialVersionUID = 1L;
 
-    private String user_id;
+    @Column(name = "user_id")
+    private String userId;
 
-    private String role_id;
+    @Column(name = "role_id")
+    private String roleId;
 
+    @Column(name = "remarks")
     private String remarks;
 
     public static long getSerialVersionUID() {
         return serialVersionUID;
     }
 
-    public String getUser_id() {
-        return user_id;
+    public String getUserId() {
+        return userId;
     }
 
-    public void setUser_id(String user_id) {
-        this.user_id = user_id;
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
-    public String getRole_id() {
-        return role_id;
+    public String getRoleId() {
+        return roleId;
     }
 
-    public void setRole_id(String role_id) {
-        this.role_id = role_id;
+    public void setRoleId(String roleId) {
+        this.roleId = roleId;
     }
 
     public String getRemarks() {

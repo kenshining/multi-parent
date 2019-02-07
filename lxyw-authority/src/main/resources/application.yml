@@ -4,6 +4,7 @@ server:
 spring:
     datasource:
         name: authority-datasource
+        type: com.alibaba.druid.pool.DruidDataSource
         url: jdbc:mysql://localhost:3306/lxyw-authority?useUnicode=true&characterEncoding=utf8
         username: root
         password: root6299383
